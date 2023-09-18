@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput } from 'react-native';
 import Add from '../components/add';
 import Edit from '../components/edit';
 import Update from '../components/update';
@@ -15,23 +15,24 @@ export default function ToDo() {
     if (newTask) {
       // Create a new task object with a unique ID, creation date, title, and description
       const task = {
-        id: tasks?.length + 1,
+        id: tasks ? tasks.length + 1 : 1,
         created_on: new Date().toLocaleString(),
         taskTitle: newTask,
         taskDescription: description, // Use the description input
       };
-
-      // Create a copy of the tasks array and add the new task
-      const updatedTasks = [...tasks, task];
-
+  
+      // Concatenate the new task with the existing tasks array
+      const updatedTasks = tasks ? tasks.concat(task) : [task];
+  
       // Update the tasks array with the new task
       setTasks(updatedTasks);
-
+  
       // Clear the input fields
       setNewTask('');
       setDescription('');
     }
   };
+  
 
   const removeTask = (taskId) => {
     // Filter the tasks array to keep all tasks except the one with the given ID
