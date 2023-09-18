@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* TaskManagerWithTypescriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TaskManagerWithTypescriptTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-TaskManagerWithTypescript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerWithTypescript.a */; };
+		00E356F31AD99517003FC87E /* TaskManagerwithTypescriptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TaskManagerwithTypescriptTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-TaskManagerwithTypescript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerwithTypescript.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a */; };
+		7699B88040F8A987B510C191 /* libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = TaskManagerWithTypescript;
+			remoteInfo = TaskManagerwithTypescript;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* TaskManagerWithTypescriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerWithTypescriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* TaskManagerwithTypescriptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskManagerwithTypescriptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* TaskManagerWithTypescriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskManagerWithTypescriptTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* TaskManagerWithTypescript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManagerWithTypescript.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TaskManagerWithTypescript/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TaskManagerWithTypescript/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TaskManagerWithTypescript/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TaskManagerWithTypescript/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TaskManagerWithTypescript/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-TaskManagerWithTypescript.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerWithTypescript.debug.xcconfig"; path = "Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-TaskManagerWithTypescript.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerWithTypescript.release.xcconfig"; path = "Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerWithTypescript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaskManagerWithTypescript.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TaskManagerWithTypescript/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.release.xcconfig"; path = "Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* TaskManagerwithTypescriptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskManagerwithTypescriptTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* TaskManagerwithTypescript.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManagerwithTypescript.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TaskManagerwithTypescript/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TaskManagerwithTypescript/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TaskManagerwithTypescript/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TaskManagerwithTypescript/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TaskManagerwithTypescript/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-TaskManagerwithTypescript.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerwithTypescript.debug.xcconfig"; path = "Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-TaskManagerwithTypescript.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerwithTypescript.release.xcconfig"; path = "Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerwithTypescript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaskManagerwithTypescript.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TaskManagerwithTypescript/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.release.xcconfig"; path = "Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a in Frameworks */,
+				7699B88040F8A987B510C191 /* libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-TaskManagerWithTypescript.a in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-TaskManagerwithTypescript.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* TaskManagerWithTypescriptTests */ = {
+		00E356EF1AD99517003FC87E /* TaskManagerwithTypescriptTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* TaskManagerWithTypescriptTests.m */,
+				00E356F21AD99517003FC87E /* TaskManagerwithTypescriptTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = TaskManagerWithTypescriptTests;
+			path = TaskManagerwithTypescriptTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* TaskManagerWithTypescript */ = {
+		13B07FAE1A68108700A75B9A /* TaskManagerwithTypescript */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = TaskManagerWithTypescript;
+			name = TaskManagerwithTypescript;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerWithTypescript.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.a */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-TaskManagerwithTypescript.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* TaskManagerWithTypescript */,
+				13B07FAE1A68108700A75B9A /* TaskManagerwithTypescript */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* TaskManagerWithTypescriptTests */,
+				00E356EF1AD99517003FC87E /* TaskManagerwithTypescriptTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -131,8 +131,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* TaskManagerWithTypescript.app */,
-				00E356EE1AD99517003FC87E /* TaskManagerWithTypescriptTests.xctest */,
+				13B07F961A680F5B00A75B9A /* TaskManagerwithTypescript.app */,
+				00E356EE1AD99517003FC87E /* TaskManagerwithTypescriptTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-TaskManagerWithTypescript.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-TaskManagerWithTypescript.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-TaskManagerwithTypescript.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-TaskManagerwithTypescript.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* TaskManagerWithTypescriptTests */ = {
+		00E356ED1AD99517003FC87E /* TaskManagerwithTypescriptTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TaskManagerWithTypescriptTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TaskManagerwithTypescriptTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -167,14 +167,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = TaskManagerWithTypescriptTests;
-			productName = TaskManagerWithTypescriptTests;
-			productReference = 00E356EE1AD99517003FC87E /* TaskManagerWithTypescriptTests.xctest */;
+			name = TaskManagerwithTypescriptTests;
+			productName = TaskManagerwithTypescriptTests;
+			productReference = 00E356EE1AD99517003FC87E /* TaskManagerwithTypescriptTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* TaskManagerWithTypescript */ = {
+		13B07F861A680F5B00A75B9A /* TaskManagerwithTypescript */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaskManagerWithTypescript" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaskManagerwithTypescript" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = TaskManagerWithTypescript;
-			productName = TaskManagerWithTypescript;
-			productReference = 13B07F961A680F5B00A75B9A /* TaskManagerWithTypescript.app */;
+			name = TaskManagerwithTypescript;
+			productName = TaskManagerwithTypescript;
+			productReference = 13B07F961A680F5B00A75B9A /* TaskManagerwithTypescript.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TaskManagerWithTypescript" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TaskManagerwithTypescript" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -224,8 +224,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* TaskManagerWithTypescript */,
-				00E356ED1AD99517003FC87E /* TaskManagerWithTypescriptTests */,
+				13B07F861A680F5B00A75B9A /* TaskManagerwithTypescript */,
+				00E356ED1AD99517003FC87E /* TaskManagerwithTypescriptTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,15 +272,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -298,7 +298,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,7 +320,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TaskManagerWithTypescript-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TaskManagerwithTypescript-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,15 +333,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -350,15 +350,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript/Pods-TaskManagerWithTypescript-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript/Pods-TaskManagerwithTypescript-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -367,15 +367,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests/Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests/Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -404,7 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* TaskManagerWithTypescriptTests.m in Sources */,
+				00E356F31AD99517003FC87E /* TaskManagerwithTypescriptTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +422,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* TaskManagerWithTypescript */;
+			target = 13B07F861A680F5B00A75B9A /* TaskManagerwithTypescript */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -430,14 +430,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = TaskManagerWithTypescriptTests/Info.plist;
+				INFOPLIST_FILE = TaskManagerwithTypescriptTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,17 +451,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManagerWithTypescript.app/TaskManagerWithTypescript";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManagerwithTypescript.app/TaskManagerwithTypescript";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerWithTypescript-TaskManagerWithTypescriptTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-TaskManagerwithTypescript-TaskManagerwithTypescriptTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = TaskManagerWithTypescriptTests/Info.plist;
+				INFOPLIST_FILE = TaskManagerwithTypescriptTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,19 +475,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManagerWithTypescript.app/TaskManagerWithTypescript";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskManagerwithTypescript.app/TaskManagerwithTypescript";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-TaskManagerWithTypescript.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-TaskManagerwithTypescript.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = TaskManagerWithTypescript/Info.plist;
+				INFOPLIST_FILE = TaskManagerwithTypescript/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +499,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = TaskManagerWithTypescript;
+				PRODUCT_NAME = TaskManagerwithTypescript;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -508,12 +508,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-TaskManagerWithTypescript.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-TaskManagerwithTypescript.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = TaskManagerWithTypescript/Info.plist;
+				INFOPLIST_FILE = TaskManagerwithTypescript/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,7 +525,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = TaskManagerWithTypescript;
+				PRODUCT_NAME = TaskManagerwithTypescript;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -669,7 +669,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TaskManagerWithTypescriptTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TaskManagerwithTypescriptTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -678,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaskManagerWithTypescript" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaskManagerwithTypescript" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -687,7 +687,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TaskManagerWithTypescript" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TaskManagerwithTypescript" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

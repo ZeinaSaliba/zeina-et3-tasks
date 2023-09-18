@@ -5,7 +5,8 @@
  * @format
  */
 
-import React from 'react';
+import React from 'react'
+import { Component } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
