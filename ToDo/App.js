@@ -8,38 +8,53 @@ export default function App() {
 
   const addTask = () => {
     if (newTask) {
-      // Create a copy of the tasks array
-      const updatedTasks = [...tasks];
-      // Add the new task to the end of the array using push
-      updatedTasks.push(newTask);
+      // Create a new task object
+      const task = {
+        id: tasks.length + 1, // Assign a unique ID
+        created_on: new Date().toLocaleString(), // Set the creation date
+        taskTitle: newTask,
+        taskDescription: '', // You can add a description field if needed
+      };
+
+      // Create a copy of the tasks array and add the new task
+      const updatedTasks = [...tasks, task];
+
       // Update the tasks array with the new task
       setTasks(updatedTasks);
+
       // Clear the input field
       setNewTask('');
     }
   };
 
-  const removeTask = (indexToRemove) => {
-    // Filter the tasks array to keep all tasks except the one at indexToRemove
-    const updatedTasks = tasks.filter((task, index) => index !== indexToRemove);
+  const removeTask = (taskId) => {
+    // Filter the tasks array to keep all tasks except the one with the given ID
+    const updatedTasks = tasks.filter((task) => task.id !== taskId);
+
     // Update the tasks array with the filtered array
     setTasks(updatedTasks);
   };
 
-  const editTask = (task, index) => {
-    // Set the editingIndex to the index of the task being edited
-    setEditingIndex(index);
+  const editTask = (task) => {
+    // Set the editingIndex to the ID of the task being edited
+    setEditingIndex(task.id);
+
     // Populate the input field with the text of the task
-    setNewTask(task);
+    setNewTask(task.taskTitle);
   };
 
   const updateTask = () => {
     if (editingIndex !== -1 && newTask) {
-      // Create a copy of the tasks array and update the task at the editingIndex
-      const updatedTasks = [...tasks];
-      updatedTasks[editingIndex] = newTask;
+      // Create a copy of the tasks array and find the task to update by ID
+      const updatedTasks = tasks.map((task) =>
+        task.id === editingIndex
+          ? { ...task, taskTitle: newTask }
+          : task
+      );
+
       // Update the tasks array with the edited task
       setTasks(updatedTasks);
+
       // Clear the input field and reset editingIndex
       setNewTask('');
       setEditingIndex(-1);
@@ -67,22 +82,27 @@ export default function App() {
         </TouchableOpacity>
       )}
 
-      {tasks?.map((task, index) => (
-        <View key={index} style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text>{task}</Text>
-          <TouchableOpacity onPress={() => editTask(task, index)}>
+      {tasks.map((task) => (
+        <View
+          key={task.id}
+          style={{ flexDirection: 'row', alignItems: 'center' }}
+        >
+          <Text>{task.taskTitle}</Text>
+          <TouchableOpacity onPress={() => editTask(task)}>
             <Text
               style={{
                 backgroundColor: 'lightgreen',
                 padding: 5,
                 marginLeft: 10,
-              }}>
+              }}
+            >
               Edit
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => removeTask(index)}>
+          <TouchableOpacity onPress={() => removeTask(task.id)}>
             <Text
-              style={{ backgroundColor: 'salmon', padding: 5, marginLeft: 10 }}>
+              style={{ backgroundColor: 'salmon', padding: 5, marginLeft: 10 }}
+            >
               Remove
             </Text>
           </TouchableOpacity>
