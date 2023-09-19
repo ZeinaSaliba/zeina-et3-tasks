@@ -1,0 +1,97 @@
+question 1: 
+
+Explain what TypeScript is and why it's useful.
+
+
+answer:
+
+TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, abstract classes, function overloading, tuple, generics, etc.
+
+exemple: 
+
+interface TaskManagerProps {
+  initialTasks: TaskList;
+}
+
+export const TaskManager: React.FC<TaskManagerProps> = ({ initialTasks }) => {
+  const [tasks, setTasks] = useState<TaskList>(initialTasks);
+  const [newTask, setNewTask] = useState<Task>({
+    id: 1,
+    title: '',
+    description: '',
+    dueDate: new Date(),
+    isCompleted: false,
+  });
+}
+
+TypeScript is used to define the TaskManagerProps interface, specifying that the initialTasks prop should be of type TaskList. This type annotation ensures that when developers use the TaskManager component, they know what props are expected and their types. If someone tries to pass the wrong type of prop, TypeScript will raise an error during development, helping prevent runtime errors and improving code quality.
+
+question 2:
+
+Explain the importance of type annotations and how to use them in TypeScript.
+
+answer : 
+
+Type annotations in TypeScript are a powerful feature that can help developers write better code. By specifying the types of variables, function parameters, and function return values, TypeScript can catch errors early in the development process and make the code more robust.
+
+exemple : 
+
+interface TaskManagerProps {
+  initialTasks: TaskList; // Type annotation specifying the type of 'initialTasks'
+}
+
+export const TaskManager: React.FC<TaskManagerProps> = ({ initialTasks }) => {
+  const [tasks, setTasks] = useState<TaskList>(initialTasks); // Type annotation for 'tasks' and 'setTasks'
+  const [newTask, setNewTask] = useState<Task>({
+    id: 1,
+    title: '',
+    description: '',
+    dueDate: new Date(),
+    isCompleted: false,
+  }); // Type annotation for 'newTask' and 'setNewTask'
+}
+
+The TaskManagerProps interface uses type annotations to specify that the initialTasks prop should be of type TaskList. This ensures that when you use the TaskManager component, you know the expected type of its props.
+Inside the TaskManager component, type annotations are used with the useState hook to declare the types of tasks, setTasks, newTask, and setNewTask. This ensures that these variables hold the correct types of data, preventing type-related errors.
+In the addTask and toggleCompletion functions, type annotations are used for the taskId parameter, ensuring that it is of type number. This helps catch potential type mismatches or errors when calling these functions.
+
+question 3 :
+
+Introduce interfaces and type aliases for defining custom data structures.
+
+Type Aliases allow defining types with a custom name (an Alias).
+
+Type Aliases can be used for primitives like string or more complex types such as objects and arrays
+
+Interfaces are similar to type aliases, except they only apply to object types.
+
+exemple interface :
+
+export interface Task {
+  id: number;
+  title: string;
+  description: string;
+  dueDate: Date;
+  isCompleted: boolean;
+}
+
+In this code snippet, an interface named Task is defined to describe the structure of a task. It specifies the properties (id, title, description, dueDate, and isCompleted) and their respective types.
+
+exemple of type alias:
+
+export type TaskList = Task[];
+
+Here, a type alias named TaskList is introduced. It represents an array of Task objects. This alias simplifies the declaration of variables or function parameters that involve an array of tasks. For example:
+
+const initialTasks: TaskList = [
+  {
+    id: 1,
+    title: 'Task 1',
+    description: 'Description 1',
+    dueDate: new Date(),
+    isCompleted: false,
+  },
+  // More tasks...
+];
+
+In this example, TaskList is used to annotate the type of initialTasks, making it clear that it's an array of Task objects.
