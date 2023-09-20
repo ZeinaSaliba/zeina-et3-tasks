@@ -33,4 +33,20 @@ export default StyleSheet.create({
     paddingBottom: hp('1%'),
     justifyContent: 'space-evenly',
   },
+
+  addButton: {
+    backgroundColor:"lightgreen",
+    width:wp('7%'),
+    height:hp('3%'),
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    borderRadius:5
+  },
+  containerButton:{
+    flexDirection:"row",
+    width:wp('40%'),
+    display:"flex",
+    justifyContent:"space-around",
+  },
 });
