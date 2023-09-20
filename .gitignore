@@ -5,4 +5,5 @@ ToDo/android/
 ToDo/node_modules/
 ToDo/node_modules/.bin/acorn
 ToDo/yarn.lock
-onlineShoppingCart/android/.idea/workspace.xml
+onlineShoppingCart/android/
+onlineShoppingCart/node_modules/
