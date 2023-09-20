@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, TextInput } from 'react-native';
 import Add from '../components/add';
-import Edit from '../components/edit';
 import Update from '../components/update';
-import Remove from '../components/remove';
+import TaskList from '../components/taskList';
 
 export default function ToDo() {
   const [tasks, setTasks] = useState([]);
@@ -20,19 +19,18 @@ export default function ToDo() {
         taskTitle: newTask,
         taskDescription: description, // Use the description input
       };
-  
+
       // Concatenate the new task with the existing tasks array
       const updatedTasks = tasks ? tasks.concat(task) : [task];
-  
+
       // Update the tasks array with the new task
       setTasks(updatedTasks);
-  
+
       // Clear the input fields
       setNewTask('');
       setDescription('');
     }
   };
-  
 
   const removeTask = (taskId) => {
     // Filter the tasks array to keep all tasks except the one with the given ID
@@ -55,18 +53,18 @@ export default function ToDo() {
     if (editingIndex !== -1 && newTask) {
       // Find the index of the task to update by ID
       const indexToUpdate = tasks.findIndex((task) => task.id === editingIndex);
-  
+
       if (indexToUpdate !== -1) {
         // Create a new array to hold the updated tasks
         const updatedTasks = tasks.slice();
-  
+
         // Update the properties of the task directly
         updatedTasks[indexToUpdate].taskTitle = newTask;
         updatedTasks[indexToUpdate].taskDescription = description;
-  
+
         // Update the tasks array with the edited task
         setTasks(updatedTasks);
-  
+
         // Clear the input fields and reset editingIndex
         setNewTask('');
         setDescription('');
@@ -74,8 +72,6 @@ export default function ToDo() {
       }
     }
   };
-  
-  
 
   return (
     <View>
@@ -90,23 +86,12 @@ export default function ToDo() {
         onChangeText={(text) => setDescription(text)}
       />
       {editingIndex === -1 ? (
-        <Add addTask={()=>{addTask()}}/>
+        <Add addTask={() => addTask()} />
       ) : (
-        <Update updateTask={()=>{updateTask()}}/>
-
+        <Update updateTask={() => updateTask()} />
       )}
 
-      {tasks.map((task, key) => (
-        <View
-          key={key}
-          style={{ flexDirection: 'row', alignItems: 'center' }}
-        >
-          <Text>{task?.taskTitle}</Text>
-          <Text>{task?.taskDescription}</Text>
-          <Edit editTask={()=>{editTask(task)}}/>
-          <Remove removeTask={()=>{removeTask(task.id)}} />
-        </View>
-      ))}
+      <TaskList tasks={tasks} editTask={editTask} removeTask={removeTask} />
     </View>
   );
 }

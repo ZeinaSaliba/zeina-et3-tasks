@@ -1,3 +1,8 @@
 onlineShoppingCart/node_modules/hermes-profile-transformer/src/.DS_Store
 TaskManagerWithTypescript/node_modules/hermes-profile-transformer/src/.DS_Store
 ToDo/node_modules/hermes-profile-transformer/src/.DS_Store
+ToDo/android/
+ToDo/node_modules/
+ToDo/node_modules/.bin/acorn
+ToDo/yarn.lock
+onlineShoppingCart/android/.idea/workspace.xml
