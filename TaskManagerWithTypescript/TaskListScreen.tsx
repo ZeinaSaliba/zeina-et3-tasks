@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import { TaskList } from './customTypes/types';
 import TaskItem from './TaskItem'; // Import the TaskItem component
 
