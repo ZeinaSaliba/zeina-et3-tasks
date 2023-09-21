@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "lib": ["es2016", "dom"],
     "experimentalDecorators": true,
-    "rootDir": "./", // Set to the root directory of your project
+    "rootDir": "./",
     "outDir": "./build/",
     "jsx": "react-native",
     "noUnusedLocals": true,
