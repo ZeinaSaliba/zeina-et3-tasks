@@ -1,54 +1,22 @@
-import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  TextInput,
-  ScrollView,
-} from 'react-native';
-import {observer, useObserver} from 'mobx-react';
+import React from 'react';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {observer} from 'mobx-react';
+import productStore from '../../mobx/productStore'; // Import the ProductStore
 import cartStore from '../../mobx/cartStore';
 import styles from './styles';
-import ProductStore from '../../mobx/productStore';
 
 function ProductScreen(props) {
-    const {navigation} = props;
+  const {navigation} = props;
 
-  const initialCart = [
-    {id: 0, title: 'Tomatoes', count: 0},
-    {id: 1, title: 'Apples', count: 0},
-    {id: 2, title: 'Bananas', count: 0},
-    {id: 3, title: 'Oranges', count: 0},
-    {id: 4, title: 'Grapes', count: 0},
-  ];
-
-  const [cartCount, setCartCount] = useState(initialCart);
-
-  const incrementProduct = id => {
-    setCartCount(prevCart =>
-      prevCart.map(product =>
-        product.id === id ? {...product, count: product.count + 1} : product,
-      ),
-    );
-  };
-
-  const decrementProduct = id => {
-    setCartCount(prevCart =>
-      prevCart.map(product =>
-        product.id === id && product.count > 0
-          ? {...product, count: product.count - 1}
-          : product,
-      ),
-    );
-  };
+  // Access the products from the ProductStore
+  const products = productStore.products;
 
   return (
     <View style={styles.container}>
       <View>
         <View style={{flexWrap: 'wrap', flexDirection: 'row'}}>
-          {cartCount.map(product => (
-            <View>
+          {products.map((product, key) => (
+            <View key={key}>
               <View
                 style={[
                   styles.view,
@@ -59,18 +27,22 @@ function ProductScreen(props) {
                 ]}>
                 <View style={[styles.imageText]}>
                   <View style={[styles.viewText]}>
-                    <Text>{product.title}</Text>
+                    <Text>{product?.title}</Text>
                   </View>
                 </View>
               </View>
               <View style={styles.containerButton}>
-                <TouchableOpacity style={styles.addButton}>
+                <TouchableOpacity
+                  style={styles.addButton}
+                  onPress={() => {
+                    cartStore.removeFromCart(product);
+                  }} // Call your decrement function
+                >
                   <Text style={{color: 'white', fontSize: 15}}>-</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={() => {
-                    console.log('press');
-                    navigation.navigate('CartScreen', {product: product.title})
+                    cartStore.addToCart(product);
                   }}
                   style={styles.addButton}>
                   <Text style={{color: 'white', fontSize: 15}}>+</Text>
@@ -79,8 +51,23 @@ function ProductScreen(props) {
             </View>
           ))}
         </View>
+        <TouchableOpacity
+          style={styles.goNext}
+          onPress={() => {
+            navigation.navigate('CartScreen');
+          }}>
+          <Text>Go Next</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{backgroundColor: 'lightgreen'}}
+          onPress={() => {
+            navigation.navigate('UserScreen');
+          }}>
+          <Text>Go Back</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 }
+
 export default observer(ProductScreen);

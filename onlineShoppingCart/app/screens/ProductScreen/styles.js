@@ -49,4 +49,13 @@ export default StyleSheet.create({
     display:"flex",
     justifyContent:"space-around",
   },
+  goNext:{
+    height:hp('3%'),
+    marginTop:hp('2%'),
+    display:"flex",
+    justifyContent:'center',
+    alignItems:"flex-end",
+    width:wp('90%'),
+    backgroundColor:"#d5d5d5"
+  },
 });

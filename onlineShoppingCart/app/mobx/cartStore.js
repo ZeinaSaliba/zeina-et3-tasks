@@ -1,28 +1,34 @@
-import { makeAutoObservable,makeObservable, observable, computed, action, flow } from "mobx"
+// CartStore.js
+import { makeAutoObservable } from 'mobx';
 
-export default class CartStore {
-    cartItems = []
+class CartStore {
+  cartItems = [];
 
-    constructor() {
-        makeAutoObservable(this,{
-            addToCart : action,
-            removeFromCart : action,
-            cartCount : computed
-        });
-        // makeObservable
+  constructor() {
+    makeAutoObservable(this);
+  }
+
+  addToCart(product) {
+    const existingProduct = this.cartItems.find((item) => item.title === product.title);
+    if (existingProduct) {
+      existingProduct.count += 1;
+    } else {
+      this.cartItems.push({ ...product, count: 1 });
     }
+  }
 
-    addToCart(product) {
-        this.cartItems.push(product)
+  removeFromCart(product) {
+    const index = this.cartItems.findIndex((item) => item.title === product.title);
+    if (index !== -1) {
+      const item = this.cartItems[index];
+      if (item.count > 1) {
+        item.count -= 1;
+      } else {
+        this.cartItems.splice(index, 1);
+      }
     }
-
-    removeFromCart(product) {
-        this.cartItems = this.cartItems.filter(item => item?.id !== product?.id);
-    }
-
-    get cartCount() {
-        return this.cartItems.length;
-    }
+  }
 }
 
 const cartStore = new CartStore();
+export default cartStore;
