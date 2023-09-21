@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, Switch } from 'react-native';
-import { Task, TaskList } from './types';
+import { Task, TaskList } from './customTypes/types';
 import { TaskListScreen } from './TaskListScreen';
 
 interface TaskManagerProps {

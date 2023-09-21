@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { TaskList } from './types';
+import { TaskList } from './customTypes/types';
 
 interface TaskItemProps {
   tasks: TaskList; // Accept an array of tasks

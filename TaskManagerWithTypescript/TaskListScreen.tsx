@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { TaskList } from './types';
+import { TaskList } from './customTypes/types';
 import TaskItem from './TaskItem'; // Import the TaskItem component
 
 interface TaskListScreenProps {
