@@ -1,43 +1,23 @@
-// CartScreen.js
-
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import { observer } from 'mobx-react';
-import cartStore from '../../mobx/cartStore';
+import {View, Text} from 'react-native';
 import styles from './styles';
+import CartComponent from '../../components/CartComponent/cartComponent';
+import {BackButton} from '../../components/Buttons/navigationButton';
 
 function CartScreen(props) {
-  const { navigation } = props;
-
-  // Access the cart items from the store
-  const cartItems = cartStore.cartItems;
+  const {navigation} = props;
 
   return (
     <View style={styles.container}>
       <Text>Cart</Text>
-      {cartItems.map((item, key) => (
-        <View
-          key={key}
-          style={[
-            styles.view,
-            {
-              borderRadius: 8,
-              backgroundColor: 'white',
-            },
-          ]}>
-          <View style={[styles.imageText]}>
-            <View style={[styles.viewText]}>
-              <Text>{item?.title}</Text>
-              <Text>{item?.count}</Text> 
-            </View>
-          </View>
-        </View>
-      ))}
-      <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Text>Go Back</Text>
-      </TouchableOpacity>
+      <CartComponent />
+      <BackButton
+        onPress={() => {
+          navigation.navigate('ProductScreen');
+        }}
+      />
     </View>
   );
 }
 
-export default observer(CartScreen);
+export default CartScreen;

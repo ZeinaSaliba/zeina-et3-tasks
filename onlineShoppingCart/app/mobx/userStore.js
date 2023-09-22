@@ -1,7 +1,8 @@
-// UserStore.js
 import { makeAutoObservable } from 'mobx';
 
+// Create a UserStore class
 class UserStore {
+  // Initialize the user object to store user information
   user = {
     id: 1,
     username: 'Demario80',
@@ -12,13 +13,16 @@ class UserStore {
     age: 30,
     country: 'USA',
     location: 'New York',
-    // Add more user-related data here
   };
 
+  // Constructor for the UserStore class
   constructor() {
+    // Automatically make the class observable with MobX
     makeAutoObservable(this);
   }
 }
 
+
 const userStore = new UserStore();
+
 export default userStore;
