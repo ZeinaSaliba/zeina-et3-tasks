@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { TaskManager } from './TaskManager';
-import { TaskList } from './customTypes/types';
+import { TaskList } from './src/types/types';
 
 const initialTasks: TaskList = [];
 

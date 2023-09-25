@@ -1,11 +1,7 @@
+// TaskItem.tsx
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { TaskList } from './customTypes/types';
-
-interface TaskItemProps {
-  tasks: TaskList; // Accept an array of tasks
-  onToggleCompletion: (taskId: number) => void;
-}
+import { TaskItemProps } from './src/types/types'; // Adjust the path as needed
 
 const TaskItem: React.FC<TaskItemProps> = ({ tasks, onToggleCompletion }) => {
   return (

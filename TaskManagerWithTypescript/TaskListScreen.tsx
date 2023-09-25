@@ -1,14 +1,10 @@
+// TaskListScreen.tsx
 import React from 'react';
 import { Text, ScrollView } from 'react-native';
-import { TaskList } from './customTypes/types';
-import TaskItem from './TaskItem'; // Import the TaskItem component
+import TaskItem from './TaskItem';
+import { TaskListScreenProps } from './src/types/types';
 
-interface TaskListScreenProps {
-  tasks: TaskList;
-  onToggleCompletion: (taskId: number) => void;
-}
-
-export const TaskListScreen: React.FC<TaskListScreenProps> = ({ tasks, onToggleCompletion }) => {
+const TaskListScreen: React.FC<TaskListScreenProps> = ({ tasks, onToggleCompletion }) => {
   return (
     <ScrollView>
       <Text>Task List</Text>
@@ -16,3 +12,5 @@ export const TaskListScreen: React.FC<TaskListScreenProps> = ({ tasks, onToggleC
     </ScrollView>
   );
 };
+
+export default TaskListScreen;

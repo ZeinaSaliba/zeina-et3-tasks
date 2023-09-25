@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text, Switch } from 'react-native';
-import { Task, TaskList } from './customTypes/types';
-import { TaskListScreen } from './TaskListScreen';
+import React, {useState} from 'react';
+import {View, Switch} from 'react-native';
+import {Task, TaskList} from './src/types/types';
+import TaskListScreen from './TaskListScreen';
+import CustomTextInput from './components/CustomTextInput/CustomTextInput';
+import CustomButton from './components/CustomButton/CustomButton';
 
 interface TaskManagerProps {
   initialTasks: TaskList;
 }
 
-export const TaskManager: React.FC<TaskManagerProps> = ({ initialTasks }) => {
+export const TaskManager: React.FC<TaskManagerProps> = ({initialTasks}) => {
   const [tasks, setTasks] = useState<TaskList>(initialTasks);
   const [newTask, setNewTask] = useState<Task>({
     id: 1,
@@ -36,7 +38,7 @@ export const TaskManager: React.FC<TaskManagerProps> = ({ initialTasks }) => {
 
   const toggleCompletion = (taskId: number) => {
     // Update tasks directly using forEach
-    tasks.forEach((task) => {
+    tasks.forEach(task => {
       if (task.id === taskId) {
         task.isCompleted = !task.isCompleted;
       }
@@ -46,23 +48,21 @@ export const TaskManager: React.FC<TaskManagerProps> = ({ initialTasks }) => {
 
   return (
     <View>
-      <TextInput
+      <CustomTextInput
         placeholder="Task Title"
-        value={newTask?.title}
-        onChangeText={(text) => setNewTask({ ...newTask, title: text })}
+        value={newTask.title}
+        onChangeText={text => setNewTask({...newTask, title: text})}
       />
-      <TextInput
+      <CustomTextInput
         placeholder="Task Description"
-        value={newTask?.description}
-        onChangeText={(text) => setNewTask({ ...newTask, description: text })}
+        value={newTask.description}
+        onChangeText={text => setNewTask({...newTask, description: text})}
       />
       <Switch
         value={newTask?.isCompleted}
-        onValueChange={(value) => setNewTask({ ...newTask, isCompleted: value })}
+        onValueChange={value => setNewTask({...newTask, isCompleted: value})}
       />
-      <TouchableOpacity onPress={addTask} style={{ backgroundColor: 'blue', padding: 10, borderRadius: 5 }}>
-        <Text style={{ color: 'white', textAlign: 'center' }}>Add Task</Text>
-      </TouchableOpacity>
+      <CustomButton title="Add Task" onPress={addTask} />
       <TaskListScreen tasks={tasks} onToggleCompletion={toggleCompletion} />
     </View>
   );
