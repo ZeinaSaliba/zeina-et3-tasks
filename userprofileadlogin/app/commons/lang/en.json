@@ -1,0 +1,11 @@
+{
+    "login": "Login",
+    "profile":"Profile",
+    "settings":"Settings",
+    "languages":"Languages",
+    "logout":"Logout",
+    "welcome": "Welcome",
+    "username": "Username",
+    "password": "Password"
+
+}
